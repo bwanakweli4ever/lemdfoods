@@ -228,4 +228,16 @@ export const showcaseProducts = [
     description: "Bright, aromatic turmeric powder",
     image: "/images/turmeric.png",
   },
+  {
+    name: "Vimto Soda",
+    origin: "Cameroon",
+    description: "Fruit Tasty Soda with refreshing flavour",
+    image: "/images/vimto.png",
+  },
+  {
+    name: "Orangina Soda",
+    origin: "Cameroon",
+    description: "Refreshing orange flavour",
+    image: "/images/orangina.png",
+  },
 ];
