@@ -69,7 +69,13 @@ const Pattern = () => (
   </div>
 );
 
-const Slide = ({ slide, index, active }) => {
+interface SlideProps {
+  slide: SlideData;
+  index: number;
+  active: number;
+}
+
+const Slide = ({ slide, index, active }:SlideProps) => {
   return (
     <div className="relative grid min-h-[68vh] w-full grid-cols-1 overflow-hidden border border-white/10 bg-gradient-to-br from-slate-900 to-slate-800 shadow-2xl md:grid-cols-2">
       <Pattern />

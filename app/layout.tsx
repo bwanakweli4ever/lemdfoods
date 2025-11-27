@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import { Inter, Nunito } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import Header from "@/components/header"
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,17 +36,26 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${nunito.variable} antialiased light`} style={{colorScheme: 'light'}}>
-      <body className="font-nunito">
-        <ThemeProvider 
-          attribute="class" 
-          defaultTheme="light" 
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+    <html
+      lang="en"
+      className={`${inter.variable} ${nunito.variable} antialiased light`}
+      style={{ colorScheme: "light" }}
+    >
+      <body className="">
+        {/* Header */}
+        <div className="font-nunito min-h-screen">
+          <Header />
+
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem={false}
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </div>
       </body>
     </html>
-  )
+  );
 }
