@@ -187,15 +187,15 @@ export const showcaseProducts = [
     image: "/images/Special-Pamplemousse.png",
   },
   {
-    name: "Top Grenadine Soda",
+    name: "Top Grenadine",
     origin: "Cameroon",
-    description: "Refreshing grenadine flavored soda",
+    description: "Refreshing grenadine flavored",
     image: "/images/Top-grenadine.png",
   },
   {
-    name: "Top Ananas Soda",
+    name: "Top Ananas",
     origin: "Cameroon",
-    description: "Tropical pineapple flavored soda",
+    description: "Tropical pineapple flavored",
     image: "/images/top-anamas.png",
   },
   {
@@ -205,9 +205,9 @@ export const showcaseProducts = [
     image: "/images/yellow_garri.png",
   },
   {
-    name: "Djino Soda",
+    name: "Djino",
     origin: "Cameroon",
-    description: "Sparkling fruit soda drink",
+    description: "Sparkling fruit drink",
     image: "/images/Djino.png",
   },
   {
@@ -229,13 +229,13 @@ export const showcaseProducts = [
     image: "/images/turmeric.png",
   },
   {
-    name: "Vimto Soda",
+    name: "Vimto",
     origin: "Cameroon",
-    description: "Fruit Tasty Soda with refreshing flavour",
+    description: "Fruit drink with refreshing flavour",
     image: "/images/vimto.png",
   },
   {
-    name: "Orangina Soda",
+    name: "Orangina",
     origin: "Cameroon",
     description: "Refreshing orange flavour",
     image: "/images/orangina.png",

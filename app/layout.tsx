@@ -1,22 +1,22 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter, Nunito } from "next/font/google"
-import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import Header from "@/components/header"
-
+import type React from "react";
+import type { Metadata } from "next";
+import { Inter, Nunito } from "next/font/google";
+import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
-})
+});
 
 const nunito = Nunito({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-nunito",
-})
+});
 
 export const metadata: Metadata = {
   title: "LEM D Foods - Same Flavour, Same Pleasure",
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     shortcut: "/images/lemd_logo.png",
     apple: "/images/lemd_logo.png",
   },
-  generator: 'v0.app'
-}
+  generator: "v0.app",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html
@@ -44,15 +44,15 @@ export default function RootLayout({
       <body className="">
         {/* Header */}
         <div className="font-nunito min-h-screen">
-          <Header />
-
           <ThemeProvider
             attribute="class"
             defaultTheme="light"
             enableSystem={false}
             disableTransitionOnChange
           >
+            <Header />
             {children}
+            <Footer />
           </ThemeProvider>
         </div>
       </body>
